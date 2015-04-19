@@ -76,8 +76,6 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
             if   opt.optMatrix, Vn = omp(Phi, Xn.', tau, opt.optNomalized);  
             else Vn = cell2mat(arrayfun(@(ii) countLoop(@omp, ii, Q, opt.plot*k, Phi, permute(Xn(ii,:,:), [2 1 3]), tau, opt.optNomalized), 1:Q, 'UniformOutput', false )); end
         case 'mli'
-            load Vn_1mcluster_li.mat
-matlabpool local 12;
             weight=ones(size(Phi,2),size(Xn,1));
             [BW,thresh,gv,gh] = edge(abs(Vn),'sobel',0.02);
             for j=2:Q-1
@@ -87,15 +85,13 @@ matlabpool local 12;
                  end
                 end
             end                  
-            save weightEdg2Li0325 weight; 
+            matlabpool open 12
             parfor j=1:Q
                  Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
                  j
             end
-            save VnSimEdg2Li0325 Vn;
-matlabpool close    
-% load VnSimEdg2Li0324.mat
-% weight=ones(size(Phi,2),size(Xn,1)); % REUSE WEIGHT FROM LAST STEP OR CREATE A BLANK ONE??
+           matlabpool close 
+
            for ii=1:1
             orimap=abs(Vn)>0.02;
             feat=[];
@@ -130,15 +126,13 @@ matlabpool close
                       end
                   end
             end
-            save weightEdg2Fit2Li0325 weight;
-matlabpool open 12;
+matlabpool open 12
                parfor j=1:Q
                      Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
                      j
                end
 matlabpool close
            end
-save VnSimEdg2Fit2Li0325 Vn;        
     end
     
     V=rho.*inv(Dk)*Vn*diag(EX);
@@ -146,7 +140,6 @@ save VnSimEdg2Fit2Li0325 Vn;
     Y   = ((Phi*Dk*V)./rho).';                      % Generate denoised signal
     mu  = cell2mat(arrayfun(@(ii) X(ii,:)*Y(ii,:)' ./ norm(Y(ii,:))^2, 1:Q, 'UniformOutput', false ));
     V = bsxfun(@times, mu, V);          % Frequency-wavenumber representation
-save VSimEdg2Fit2Li0325 V;        
 end
 
 
