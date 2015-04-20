@@ -185,7 +185,7 @@ Xm = Xm(:,1:M);
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 % PERFORM SPARSE WAVENUMBER ANALYSIS
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-V       =  sparse(VN, Q);
+V = sparse(VN, Q);
 V(:,fn) =  swa_mli_v2_ori( k, dm, Xm(fn,:), tau, 'optMatrix', optMatrix, 'optNomalized', optNomalized, 'plot', iterPlot, 'method', method);
 
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
