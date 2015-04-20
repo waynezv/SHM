@@ -55,7 +55,7 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
     % --------------------------------------------------------------------
     % PERFORM FUNCTION
     % --------------------------------------------------------------------
-    penalty1=1;
+    penalty1=1.5;
     penalty2=0.5;
     % DEFINE LENGTHS
     Q = size(X, 1);                         % Number of frequencies
@@ -77,12 +77,10 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
             if   opt.optMatrix, Vn = omp(Phi, Xn.', tau, opt.optNomalized);  
             else Vn = cell2mat(arrayfun(@(ii) countLoop(@omp, ii, Q, opt.plot*k, Phi, permute(Xn(ii,:,:), [2 1 3]), tau, opt.optNomalized), 1:Q, 'UniformOutput', false )); end
         case 'mli'
-%             cvx_begin quiet        
             weight=ones(size(Phi,2),size(Xn,1));
             for i=1:2
                 if i==1
                      weight=ones(size(Phi,2),size(Xn,1));
-%                      about weight
                 else
                     [BW,thresh,gv,gh] = edge(abs(Vn),'sobel',0.02);% sobel ¸Ä½ø£¬0.02£¿
                         for j=2:Q-1
