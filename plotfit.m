@@ -1,17 +1,28 @@
-function plotfit(feat, feat2, i)
-% PLOTFIT TAKES FEAT2 AND PLOTS RESULTS OF CLUSTERING AND POLYFITTING
-% i INDICATES THE ith FIGURE TO PLOT
+function plotFit(min_x, max_x, mu, sigma, theta, p)
+%PLOTFIT Plots a learned polynomial regression fit over an existing figure.
+%Also works with linear regression.
+%   PLOTFIT(min_x, max_x, mu, sigma, theta, p) plots the learned polynomial
+%   fit with power p and feature normalization (mu, sigma).
 
-x=feat2';
-[a, model, L] = vbgm_wz_1(x, 4); % TUNE NO. OF CLUSTERS
-label_name=unique(a);
-noCluster=length(label_name); % NO. OF CLUSTERS
-% subplot(3,3,i);
-for k=1:noCluster
-    [P(k,:)]= polyfit(feat(find(a==k),2),feat(find(a==k),1),2);
-    t1=polyval(P(k,:),feat(find(a==k),2));
-    errorpolyfit(k)=mean((feat(find(a==k),1)-t1).^2);% Square Mean Error
-    plot(feat(find(a==k),2), t1);
-    hold on;
-end
+% Hold on to the current figure
+hold on;
+
+% We plot a range slightly bigger than the min and max values to get
+% an idea of how the fit will vary outside the range of the data points
+x = (min_x - 15: 0.05 : max_x + 25)';
+
+% Map the X values 
+X_poly = polyFeatures(x, p);
+X_poly = bsxfun(@minus, X_poly, mu);
+X_poly = bsxfun(@rdivide, X_poly, sigma);
+
+% Add ones
+X_poly = [ones(size(x, 1), 1) X_poly];
+
+% Plot
+plot(x, X_poly * theta, '--', 'LineWidth', 2)
+
+% Hold off to the current figure
+hold off
+
 end

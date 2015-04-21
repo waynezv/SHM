@@ -59,14 +59,11 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
     penalty2=0.5;
     % DEFINE LENGTHS
     Q = size(X, 1);                         % Number of frequencies
-%     Q
     % NORMALIZE INPUT DATA
     EX = sqrt(sum(abs(X).^2,2));            % Data normalization factors (at each frequency)
     Xn = bsxfun(@times, X, 1./EX);          % Normalized data
-%     about Xn
     % BUILD PROPOGATION MATRICES
     [Phi Dk rho] = waveframe(d, k);                  % Compute propogation frame
-%     about Phi 
 
     % PERFORM OPTIMIZATION TO COMPUTE SPARSE WAVENUMBER SOLUTION
     switch opt.method
@@ -92,21 +89,13 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
                             end
                         end
                 end
-%                 fprintf('saving weight...\n');
-%                 save weight_real weight
-%                  Preprocess data
-%   X = normalize(Phi);
-%   y = center(X);
-%   % Run LASSO
-%   delta = 1e-3;
-%   [Vn info] = elasticnet(X, y, delta, 0, true, true);
                 
             matlabpool open 12
                 parfor j=1:Q
                      Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
                      j
                 end
-                fprintf('saving Vn after weighting...\n');
+                fprintf('saving Vn after edging...\n');
                 save VnReal105 Vn;
             matlabpool close
 %% lars ... need correct

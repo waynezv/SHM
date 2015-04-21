@@ -1,5 +1,4 @@
-function [V Phi] = swa_mli_md_4( k, d, X, tau, varargin )
-% 直接聚类 调整penalty
+function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
 %SWA  Sparse wavenumber analysis
 %   [V Phi DrADk] = SWA( K, D, X, TAU, OPTIONS ) transforms wave data into
 %   a sparse wavenumber domain. 
@@ -56,19 +55,16 @@ function [V Phi] = swa_mli_md_4( k, d, X, tau, varargin )
     % --------------------------------------------------------------------
     % PERFORM FUNCTION
     % --------------------------------------------------------------------
-    penalty1=1;
-    penalty2=0.5;
     % DEFINE LENGTHS
     Q = size(X, 1);                         % Number of frequencies
-%     Q
+    
     % NORMALIZE INPUT DATA
     EX = sqrt(sum(abs(X).^2,2));            % Data normalization factors (at each frequency)
     Xn = bsxfun(@times, X, 1./EX);          % Normalized data
-%     about Xn
+    
     % BUILD PROPOGATION MATRICES
     [Phi Dk rho] = waveframe(d, k);                  % Compute propogation frame
-%     about Phi 
-
+    
     % PERFORM OPTIMIZATION TO COMPUTE SPARSE WAVENUMBER SOLUTION
     switch opt.method
         case 'bp'
@@ -77,73 +73,118 @@ function [V Phi] = swa_mli_md_4( k, d, X, tau, varargin )
         case 'omp'
             if   opt.optMatrix, Vn = omp(Phi, Xn.', tau, opt.optNomalized);  
             else Vn = cell2mat(arrayfun(@(ii) countLoop(@omp, ii, Q, opt.plot*k, Phi, permute(Xn(ii,:,:), [2 1 3]), tau, opt.optNomalized), 1:Q, 'UniformOutput', false )); end
-        case 'mli'       
-            weight=ones(size(Phi,2),size(Xn,1));               
-       load Vn_unweighted_md3;
-                
-                orimap=abs(Vn)>mean(mean(abs(Vn)));% 此处取了绝对值 可否用complex？
-%                 save orimap orimap;
-                feat = [];
-                for i=1:size(orimap,1)
-                    for j=1:size(orimap,2)
-                        if(orimap(i,j)>0)
-                            feat=[feat;[i,j]];                       
-                        end
+        case 'mli'
+            % LOAD DATA
+            addpath ./data_mat
+            load Vn_1m_li.mat;
+            % INITIALIZE
+            nClus = 35; % set # of clusters
+            penalty1=1.5;
+            penalty2=0.5;
+            
+%              % INITIALIZE WEIGHT
+%              weight=ones(size(Phi,2),size(Xn,1));
+%             for i=1:2
+%                 if i==1
+%                      weight=ones(size(Phi,2),size(Xn,1));
+%                 else
+%                     [BW,thresh,gv,gh] = edge(abs(Vn),'sobel',0.02);% sobel ????????????0.02????
+%                         for j=2:Q-1
+%                             for k=2:(size(Phi,2)-1)
+%                              if((abs(Vn(k,j))>0.001)&&(sum(sum(BW(k-1:k+1,j-1:j+1)))==0))
+%                                 %weight(k,j)=weight(k,j)*penalty1;
+%                                 weight(k,j)=penalty1;% ????????weight????variational
+%                              end
+%                             end
+%                         end
+%                 end
+%             % COMPUTE VN WITH EDGE WEIGHTING
+%             matlabpool open 12
+%                 parfor j=1:Q
+%                      Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
+%                      j
+%                 end
+%                 fprintf('saving Vn after edging...\n');
+% %                 save VnReal105 Vn;
+%             matlabpool close
+         
+            %% EXTRACT FEATURES
+            orimap=abs(Vn)>0.02;
+            feat=[];
+            for i=1:size(orimap,1)
+                for j=1:size(orimap,2)
+                    if(orimap(i,j)>0)
+                        feat=[feat;[i,j]];% DIM (i * j) * 2
                     end
                 end
-%                 save featij feat; % 1826*2
-%                [U,S,V] = svd(feat);
-%                feat2=feat*V;
-%                 feat2 = abs(U);
-               % 此处存疑
-               feat2=[feat(:,1) feat(:,2)-feat(:,1)];
-    %            kmean_K=3;
-    %             [a b]=kmeans(feat2,kmean_K);
-%    save feat2ij feat2; % 1826*2
-%                [U,S,V] = svd(feat2);
-%                feat2=feat*V;
-               x=feat2';
-               [a, model, L] = vbgm_wz_1(Vn, 10);
-               label_name=unique(a);
-               kmean_K=length(label_name);% 聚类数
-               % 拟合
-               for k=1:kmean_K
-                   % 二项式拟合系数
-                [P(k,:)]= polyfit(feat(find(a==k),2),feat(find(a==k),1),2);% 其他插值方法？
-%                 [P(k,:)]= interp1(feat(find(a==k),2),feat(find(a==k),1),2);
-                % 二项式拟合在feat各点处的取值
-                t1=polyval(P(k,:),feat(find(a==k),2));
-                errorpolyfit(k)=mean((feat(find(a==k),1)-t1).^2);% Square Mean Error
-               end               
-% 以下计算新的weight 来找回缺失的outlier
-               for k=1: kmean_K
-                   % 如果和拟合曲线误差小于50 找回这些点
-                       if(errorpolyfit(k)<50)
-                           for i=1:Q
-                               if(i>min(feat(find(a==k),2)))
-                                  t1 = P(k,1)*i^2 + P(k,2)*i +P(k,3);
-                                  t2 = round(t1);
-                                  %t3=max(t2-1,1);
-                                  %t4=min(t2+1,size(weight,1));
-                                  %weight(t3:t4,i)=weight(t3:t4,i)*penalty2; 
-                                  % 此处存疑
-                                    if(((t2-1)>=1)&&((t2+1)<size(weight,1)))
-                                        weight(t2-1:t2+1,i)=penalty2;
-                                    end
-                              end
-                           end
-                       end
+            end
+           % [U,S,V] = svd(feat);
+           % feat2=feat*V;
+           feat2=[feat(:,1) feat(:,2)-feat(:,1)]; % same DIM with feat
+           % kmean_K=3;
+           % [a b]=kmeans(feat2,kmean_K);
+           x=feat2'; % DIM 2 * ( i * j )
+           
+           %% CLUSTER
+           % ADJUST NO. OF CLUSTERS TO nClus FOR 1MHz CASE
+           [a, model, L] = vbgm_wz_1(x, nClus); % DIM ( i* j ) * 1 
+           label_name=unique(a); % Get the label name without repetition
+           kmean_K=length(label_name);% Get the number of labels  
+           
+            % REDUCE CLUSTER BY REMOVING CLUSTERS WITH FEW DOTS
+            ClusRed = []; % init reduced # of clusters
+            for k = 1 : kmean_K
+                nDot = length(find(a==k));
+                if  nDot > 15 % assume a cluster size threshold
+                    ClusRed = [ClusRed k]; % record cluster label that larger than threshold size
+                end
+            end
+
+%             % ADJUST WEIGHT
+%             for k = ClusRed
+%                 xx = feat(find(a==k),2);
+%                 yy = feat(find(a==k),1);
+%                 [p(k,:),~,mu] = polyfit(xx,yy,2);
+%                 for i = 1:Q
+%                     if i>min(xx) && i<max(xx)
+%                          valuePred = polyval(p(k,:),i,[],mu);  
+%                          weight(round(valuePred), i) = penalty2;
+%                     end
+%                 end
+%             end
+%            % POLYNOMIAL FIT
+%            for k=1:kmean_K
+%             P(k,:) = polyfit(feat(find(a==k),2),feat(find(a==k),1),2);
+%             t1=polyval(P(k,:),feat(find(a==k),2));
+%             errorpolyfit(k)=mean((feat(find(a==k),1)-t1).^2);% Square Mean Error
+%            end
+%            % ADJUST WEIGHT WITH FIT 
+%             for k=1: kmean_K
+%                % ????????????????????????????????????????????50 ????????????????????
+%                    if(errorpolyfit(k)<50)
+%                        for i=1:Q
+%                            if(i>min(feat(find(a==k),2)))
+%                               t1 = P(k,1)*i^2 + P(k,2)*i +P(k,3);
+%                               t2 = round(t1);
+%                               %t3=max(t2-1,1);
+%                               %t4=min(t2+1,size(weight,1));
+%                               %weight(t3:t4,i)=weight(t3:t4,i)*penalty2; 
+%                               % ????????????????
+%                                 if(((t2-1)>=1)&&((t2+1)<size(weight,1)))
+%                                     weight(t2-1:t2+1,i)=penalty2;
+%                                 end
+%                           end
+%                        end
+%                    end
+%            end
+
+           % COMPUTE VN AGAIN WITH CLUSTER WEIGHTING
+            matlabpool open
+               parfor j=1:Q
+                     Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
+                     j
                end
-                fprintf('saving weight after ploy...\n');
-                save weight_fit_md4 weight;
-                matlabpool open 12;
-                   parfor j=1:Q
-                         Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
-                         j
-                   end
-                   fprintf('saving Vn after poly...\n');
-                   save Vn_poly_real_md4 Vn;
-                   matlabpool close;         
+            matlabpool close
     end
     
     V=rho.*inv(Dk)*Vn*diag(EX);
@@ -151,7 +192,6 @@ function [V Phi] = swa_mli_md_4( k, d, X, tau, varargin )
     Y   = ((Phi*Dk*V)./rho).';                      % Generate denoised signal
     mu  = cell2mat(arrayfun(@(ii) X(ii,:)*Y(ii,:)' ./ norm(Y(ii,:))^2, 1:Q, 'UniformOutput', false ));
     V = bsxfun(@times, mu, V);          % Frequency-wavenumber representation
-    
 end
 
 
@@ -269,15 +309,21 @@ function V = bp2( A, X, weight,tau, normFlg )
         variable V(N,Q) complex
 
         % CONSTRUCT COST FUNCTION
-        for p = 1:P, cst = cst + pow_pos(norm( A(:,:,p)*V - X(:,:,p) , 'fro' ),2); end
+        % wayne in: par
+        
+        parfor p = 1:P, cst = cst + pow_pos(norm( A(:,:,p)*V - X(:,:,p) , 'fro' ),2); end
 
-        % MINIMIZE COST       
-        minimize( cst + tau*sum(norms( V.*weight, 1, 1 )) );
+        % MINIMIZE COST 
+        
+        
+        minimize( cst + tau*sum(norms( V.*weight , 1, 1 )) );
         if normFlg == true
             subject to   % Distortionless constraint
-            for p = 1:P, trace(X(:,:,p)'*(A(:,:,p)*V))/norm(X(:,:,p), 'fro') == 1;  end
+            parfor p = 1:P, trace(X(:,:,p)'*(A(:,:,p)*V))/norm(X(:,:,p), 'fro') == 1;  end
         end    
     cvx_end
+    
+    % wayne out
 
 
 end
