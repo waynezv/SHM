@@ -76,22 +76,32 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
             if   opt.optMatrix, Vn = omp(Phi, Xn.', tau, opt.optNomalized);  
             else Vn = cell2mat(arrayfun(@(ii) countLoop(@omp, ii, Q, opt.plot*k, Phi, permute(Xn(ii,:,:), [2 1 3]), tau, opt.optNomalized), 1:Q, 'UniformOutput', false )); end
         case 'mli'
-            weight=ones(size(Phi,2),size(Xn,1));
-            [BW,thresh,gv,gh] = edge(abs(Vn),'sobel',0.02);
-            for j=2:Q-1
-                for k=2:(size(Phi,2)-1)
-                 if((abs(Vn(k,j))>0.001)&&(sum(sum(BW(k-1:k+1,j-1:j+1)))==0))
-                    weight(k,j)=weight(k,j)*penalty1; 
-                 end
+             % INITIALIZE WEIGHT
+             weight=ones(size(Phi,2),size(Xn,1));
+            for i=1:2
+                if i==1
+                     weight=ones(size(Phi,2),size(Xn,1));
+                else
+                    [BW,thresh,gv,gh] = edge(abs(Vn),'sobel',0.02);% sobel ????????????0.02????
+                        for j=2:Q-1
+                            for k=2:(size(Phi,2)-1)
+                             if((abs(Vn(k,j))>0.001)&&(sum(sum(BW(k-1:k+1,j-1:j+1)))==0))
+                                %weight(k,j)=weight(k,j)*penalty1;
+                                weight(k,j)=penalty1;% ????????weight????variational
+                             end
+                            end
+                        end
                 end
-            end                  
+            % COMPUTE VN WITH EDGE WEIGHTING
             matlabpool open 12
-            parfor j=1:Q
-                 Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
-                 j
-            end
-           matlabpool close 
-
+                parfor j=1:Q
+                     Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
+                     j
+                end
+                fprintf('saving Vn after edging...\n');
+                save VnReal105 Vn;
+            matlabpool close
+            % SUBSTRACT FEATURES
            for ii=1:1
             orimap=abs(Vn)>0.02;
             feat=[];
@@ -109,13 +119,18 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
 %            kmean_K=3;
 %             [a b]=kmeans(feat2,kmean_K);
            x=feat2'; % DIM 2 * ( i * j )
+           % CLUSTER
            % ADJUST NO. OF CLUSTERS TO 4 FOR 1MHz CASE
            [a, model, L] = vbgm_wz_1(x, 4); % DIM ( i* j ) * 1 
            label_name=unique(a); % Get the label name without repetition
            kmean_K=length(label_name);% Get the number of labels           
+           % POLYNOMIAL FIT
            for k=1:kmean_K
             P(k,:) = polyfit(feat(find(a==k),2),feat(find(a==k),1),2);
+            t1=polyval(P(k,:),feat(find(a==k),2));
+            errorpolyfit(k)=mean((feat(find(a==k),1)-t1).^2);% Square Mean Error
            end
+           % ADJUST WEIGHT WITH FIT 
             for i=1:Q
                   for k=1: kmean_K
                       if(i>min(feat(find(a==k),2)))
@@ -126,12 +141,33 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
                       end
                   end
             end
-matlabpool open 12
+           % USE BELOW FOR ALTERNATIVE
+            for k=1: kmean_K
+               % ????????????????????????????????????????????50 ????????????????????
+                   if(errorpolyfit(k)<50)
+                       for i=1:Q
+                           if(i>min(feat(find(a==k),2)))
+                              t1 = P(k,1)*i^2 + P(k,2)*i +P(k,3);
+                              t2 = round(t1);
+                              %t3=max(t2-1,1);
+                              %t4=min(t2+1,size(weight,1));
+                              %weight(t3:t4,i)=weight(t3:t4,i)*penalty2; 
+                              % ????????????????
+                                if(((t2-1)>=1)&&((t2+1)<size(weight,1)))
+                                    weight(t2-1:t2+1,i)=penalty2;
+                                end
+                          end
+                       end
+                   end
+           end
+           % COMPUTE VN AGAIN WITH CLUSTER WEIGHTING
+            matlabpool open 12
                parfor j=1:Q
                      Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
                      j
                end
-matlabpool close
+            matlabpool close
+            
            end
     end
     
