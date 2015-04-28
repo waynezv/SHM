@@ -70,6 +70,7 @@
 
 addpath('../../ddmfp-tools')
 addpath('../../dsp-tools')
+addpath('../../')
 
 clear;
 close all;
@@ -83,8 +84,9 @@ fl = 3;  % 1: one 0.5cm hole
          % 3: two 0.75cm holes
 
 % SWA INFORMATION
-fn = 20:20:800;     % Frequencies 
-k  = (2:2:1000).';  % Wavenumbers for dispersion curves
+fn = 10:1:1000;     % Frequencies 
+% k  = (2:2:1000).';  % Wavenumbers for dispersion curves
+k = linspace(4,2000,500);
 
 % LOCALIZATION INFORMATION
 W  = 0.75;    % Window size around defect
@@ -131,8 +133,15 @@ Xs = fft(xs);                          % Fourier transform
 
 % GET DISPERSION CURVES
 V = sparse(numel(k), size(Xb,1));
-V(:,fn) = swa( k, d, Xb(fn,:), 2, 'method', 'omp' );
-
+% V(:,fn) = swa( k, d, Xb(fn,:), 2, 'method', 'omp' );
+% SET PARAMETERS FOR SWA
+tau = 0.45;
+method = mli;
+% SPARSE WAVENUMBER ANALYSIS OPTIONS
+optMatrix    = false;    % Solve the basis pursuit for all frequencies at once
+optNomalized = false;   % Use distortionless constraint
+iterPlot     = false;    % Plot result at each frequency
+V(:,fn) = swa_mli_v2_ori(k, d, Xb(fn,:),tau,'optMatrix',optMatrix,'optNomalized',optNomalized,'plot',iterPlot,'method',method); 
 
 %%
 % ---------------------------------------------
