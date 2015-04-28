@@ -54,7 +54,7 @@
 
 close all;
 addpath ./swa_data
-% addpath('..\cvx-w64');
+addpath('..\cvx-w64');
 % LOAD DATA (UNCOMMENT ONE OF THE SETUPS BELOW)
 
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
