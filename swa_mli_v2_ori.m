@@ -74,17 +74,18 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
             if   opt.optMatrix, Vn = omp(Phi, Xn.', tau, opt.optNomalized);  
             else Vn = cell2mat(arrayfun(@(ii) countLoop(@omp, ii, Q, opt.plot*k, Phi, permute(Xn(ii,:,:), [2 1 3]), tau, opt.optNomalized), 1:Q, 'UniformOutput', false )); end
         case 'mli'
-
             % LOAD DATA
-            addpath .\data_mat
+            addpath('../../data_mat')
             load Vn_1m_li.mat;
-            % INITIALIZE
-            nClus = 35; % set # of clusters
-            penalty1=1.5;
-            penalty2=0.5;
+            load Vn0421.mat;
+            load We0421.mat;
+%             % INITIALIZE
+%             nClus = 35; % set # of clusters
+%             penalty1=1.5;
+%             penalty2=0.5;
             
              % INITIALIZE WEIGHT
-             weight=ones(size(Phi,2),size(Xn,1));
+%              weight=ones(size(Phi,2),size(Xn,1));
 %             for i=1:2
 %                 if i==1
 %                      weight=ones(size(Phi,2),size(Xn,1));
@@ -110,50 +111,62 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
 %             matlabpool close
          
             %% EXTRACT FEATURES
-            orimap=abs(Vn)>0.02;
-            feat=[];
-            for i=1:size(orimap,1)
-                for j=1:size(orimap,2)
-                    if(orimap(i,j)>0)
-                        feat=[feat;[i,j]];% DIM (i * j) * 2
-                    end
-                end
-            end
-           % [U,S,V] = svd(feat);
-           % feat2=feat*V;
-           feat2=[feat(:,1) feat(:,2)-feat(:,1)]; % same DIM with feat
-           % kmean_K=3;
-           % [a b]=kmeans(feat2,kmean_K);
-           x=feat2'; % DIM 2 * ( i * j )
+%             orimap=abs(Vn)>0.02;
+%             feat=[];
+%             for i=1:size(orimap,1)
+%                 for j=1:size(orimap,2)
+%                     if(orimap(i,j)>0)
+%                         feat=[feat;[i,j]];% DIM (i * j) * 2
+%                     end
+%                 end
+%             end
+%            % [U,S,V] = svd(feat);
+%            % feat2=feat*V;
+%            feat2=[feat(:,1) feat(:,2)-feat(:,1)]; % same DIM with feat
+%            % kmean_K=3;
+%            % [a b]=kmeans(feat2,kmean_K);
+%            x=feat2'; % DIM 2 * ( i * j )
            
            %% CLUSTER
-           % ADJUST NO. OF CLUSTERS TO nClus FOR 1MHz CASE
-           [a, model, L] = vbgm_wz_1(x, nClus); % DIM ( i* j ) * 1 
-           label_name=unique(a); % Get the label name without repetition
-           kmean_K=length(label_name);% Get the number of labels  
-           
-            % REDUCE CLUSTER BY REMOVING CLUSTERS WITH FEW DOTS
-            ClusRed = []; % init reduced # of clusters
-            for k = 1 : kmean_K
-                nDot = length(find(a==k));
-                if  nDot > 15 % assume a cluster size threshold
-                    ClusRed = [ClusRed k]; % record cluster label that larger than threshold size
-                end
-            end
-
-            % ADJUST WEIGHT BY POLYNIMIAL FIT
-            for k = ClusRed
-                xx = feat(find(a==k),2);
-                yy = feat(find(a==k),1);
-                [p(k,:),~,mu] = polyfit(xx,yy,2);
-                for i = 1:Q
-                    if i>min(xx) && i<max(xx)
-                         valuePred = polyval(p(k,:),i,[],mu);  
-                         weight(round(valuePred), i) = penalty2;
-                    end
-                end
-            end
-            save('./data_mat/We0421.mat', 'weight');
+%            % ADJUST NO. OF CLUSTERS TO nClus FOR 1MHz CASE
+%            [a, model, L] = vbgm_wz_1(x, nClus); % DIM ( i* j ) * 1 
+%            label_name=unique(a); % Get the label name without repetition
+%            kmean_K=length(label_name);% Get the number of labels  
+%            
+%             % REDUCE CLUSTER BY REMOVING CLUSTERS WITH FEW DOTS
+%             ClusRed = []; % init reduced # of clusters
+%             for k = 1 : kmean_K
+%                 nDot = length(find(a==k));
+%                 if  nDot > 15 % assume a cluster size threshold
+%                     ClusRed = [ClusRed k]; % record cluster label that larger than threshold size
+%                 end
+%             end
+% 
+%             % ADJUST WEIGHT BY POLYNIMIAL FIT
+%             for k = ClusRed
+%                 xx = feat(find(a==k),2);
+%                 yy = feat(find(a==k),1);
+%                 [p(k,:),~,mu] = polyfit(xx,yy,2);
+%                 for i = 1:Q
+%                     if i>min(xx) && i<max(xx)
+%                          valuePred = polyval(p(k,:),i,[],mu);  
+%                          weight(round(valuePred), i) = penalty2;
+%                     end
+%                 end
+%             end
+%             save('./data_mat/We0421.mat', 'weight');
+%             % ADJUST WEIGHT
+%             for k = ClusRed
+%                 xx = feat(find(a==k),2);
+%                 yy = feat(find(a==k),1);
+%                 [p(k,:),~,mu] = polyfit(xx,yy,2);
+%                 for i = 1:Q
+%                     if i>min(xx) && i<max(xx)
+%                          valuePred = polyval(p(k,:),i,[],mu);  
+%                          weight(round(valuePred), i) = penalty2;
+%                     end
+%                 end
+%             end
 %            % POLYNOMIAL FIT
 %            for k=1:kmean_K
 %             P(k,:) = polyfit(feat(find(a==k),2),feat(find(a==k),1),2);
@@ -181,15 +194,16 @@ function [V Phi] = swa_mli_v2( k, d, X, tau, varargin )
 %            end
 
            %% COMPUTE VN AGAIN WITH CLUSTER WEIGHTING
-            matlabpool open 12
-               parfor j=1:Q
-                     Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
-                     j
-               end
-            matlabpool close
-
-            fprintf('saving Vn...\n');
-            save('./data_mat/Vn0421.mat', 'Vn');
+%             matlabpool open 12
+%            % COMPUTE VN AGAIN WITH CLUSTER WEIGHTING
+%             matlabpool open
+%                parfor j=1:Q
+%                      Vn(:,j) = bp2(Phi, Xn(j,:).', weight(:,j),tau, opt.optNomalized);  
+%                      j
+%                end
+%             matlabpool close
+%             fprintf('saving Vn...\n');
+%             save('./data_mat/Vn0421.mat', 'Vn');
     end
     
     V=rho.*inv(Dk)*Vn*diag(EX);
