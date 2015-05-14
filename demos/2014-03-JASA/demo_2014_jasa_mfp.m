@@ -98,7 +98,7 @@ if fl == 3, load('data_20121029_localize_2holes_075cmC.mat'); metas = meta; cfgs
 Sx = metas.Sx;  % Hole location
 Tx = arrayfun(@(ii) (metab.Tx{ii}.'*ones(1,size(metab.Rx{ii},1))).', 1:numel(metab.Rx), 'UniformOutput', false);  % Transmitter locations
 d = diag(dist(cell2mat(metab.Rx), cell2mat(Tx.').'));  % Distance between each reciever and transmitter
-save d d;
+% save d d;
 % DEFINE NARROW-BAND FILTER 
 Q  = size(cell2mat(metab.x.'),1);
 sf = gaussfilt( Q, FC, BW, metas.Fs, true );

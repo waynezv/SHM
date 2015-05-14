@@ -123,8 +123,8 @@ K1 = 2000;              % Maximum wavenumber [1/m]
 K0 = K1/VN;             % Minimum wavenumber [1/m]
 
 % SET FREQUENCY DOMAIN PARAMETERS
-dF = 10e3;               % Frequency step size [Hz]
-F1 = 2000e3;             % Maximum frequency [Hz]
+dF = 1e3;               % Frequency step size [Hz]
+F1 = 1000e3;             % Maximum frequency [Hz]
 F0 = 10e3;             % Minimum frequency [Hz]
 
 % SPARSE WAVENUMBER ANALYSIS OPTIONS
@@ -197,6 +197,7 @@ y = 2*real(sws_mli_v1( k, dm, V ));
 % PERFORM SPARSE WAVENUMBER SYNTHESIS (PREDICTION)
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 z = 2*real(sws_mli_v1( k, dp, V ));
+
 
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 % PROCESS MEASURED DATA FOR COMPARISON

@@ -137,7 +137,7 @@ function [pxl, label] = fddmfp( k, d, fn, x, V, varargin )
         for m = 1:M
            fprintf([ repmat('\b', 1, 41) '%08i / %08i [Time left: %s]'], m, M, datestr(tm/24/3600*(M-m+1), 'HH:MM:SS')); ts = tic;    
            N0 = N0 + interp1(r,Y*X(m,:)'       ,d(m,:)).';  % numerator
-           plot(r, Y*X(m,:)
+%            plot(r, Y*X(m,:))
            D0 = D0 + interp1(r,sum(abs(Y).^2,2),d(m,:)).';  % denominator
            tm = (toc(ts) + tm)/min([m 2]);
         end
