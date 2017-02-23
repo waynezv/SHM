@@ -1,0 +1,2315 @@
+Running TexPoint 
+Built on Tue Apr  1 17:36:47 2008
+PowerPoint  version 12.0 (Office 2007), build 6550, running on Windows (32-bit) 6.00 (Vista) 
+Log entry at 5/3/2011 9:47:50 PM
+App_WindowBeforeRightClick
+Error 75 (Path/File access error) in TexPointPowerpoint
+Context:
+   WindowBeforeRightClick
+   0
+   validateLicense
+
+***Dumping CommandBars
+
+CommandBar  1 Name=Menu Bar. NameLocal=Menu Bar. Id= 
+
+   11 controls
+
+   10 caption = &File Id = 30002
+
+   10 caption = &Edit Id = 30003
+
+   10 caption = &View Id = 30004
+
+   10 caption = &Insert Id = 30005
+
+   10 caption = F&ormat Id = 30006
+
+   10 caption = &Tools Id = 30007
+
+   10 caption = Sli&de Show Id = 30225
+
+   10 caption = &Window Id = 30009
+
+   10 caption = A&ction Id = 30083
+
+   10 caption = &Help Id = 30010
+
+   10 caption = Te&xPoint Id = 1
+
+CommandBar  2 Name=Pictures Context Menu. NameLocal=Pictures Context Menu. Id= 
+
+   22 controls
+
+   1 caption = Te&xPoint Properties... Id = 1
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Save as Picture... Id = 5736
+
+   1 caption = &Fill in Label Id = 11332
+
+   1 caption = &Lock Label Id = 11333
+
+   1 caption = Un&lock Label Id = 11334
+
+   1 caption = &Play Id = 3524
+
+   1 caption = &Object Id = 961
+
+   10 caption = &Grouping Id = 30175
+
+   10 caption = O&rder Id = 30078
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+   1 caption = &Hyperlink... Id = 1576
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+   1 caption = Show Picture &Tools Id = 11308
+
+CommandBar  3 Name=Shapes. NameLocal=Shapes. Id= 
+
+   25 controls
+
+   1 caption = Te&xPoint Properties... Id = 1
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = Copy Ink As &Text Id = 9382
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Save as Picture... Id = 5736
+
+   1 caption = Recon&vert Id = 3720
+
+   1 caption = &Object Id = 961
+
+   1 caption = &Font... Id = 253
+
+   1 caption = &Bullets and Numbering... Id = 783
+
+   10 caption = &Grouping Id = 30175
+
+   10 caption = O&rder Id = 30078
+
+   1 caption = Set AutoShape &Defaults Id = 2179
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+   1 caption = &Define... Id = 1721
+
+   1 caption = &Hyperlink... Id = 1576
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+   1 caption = Loo&k Up... Id = 7685
+
+   10 caption = S&ynonyms Id = 30475
+
+CommandBar  4 Name=Slide Show. NameLocal=Slide Show. Id= 
+
+   1 controls
+
+   1 caption = &Resume Slide Show Id = 3973
+
+CommandBar  5 Name=Reuse Slides. NameLocal=Reuse Slides. Id= 
+
+   1 controls
+
+   25 caption = Reuse Slides Id = 5746
+
+CommandBar  6 Name=Custom Animation. NameLocal=Custom Animation. Id= 
+
+   1 controls
+
+   25 caption = Custom Animation Id = 5746
+
+CommandBar  7 Name=Task Pane. NameLocal=Task Pane. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  8 Name= . NameLocal= . Id= 
+
+   0 controls
+
+CommandBar  9 Name=Property Editor. NameLocal=Property Editor. Id= 
+
+   0 controls
+
+CommandBar  10 Name=Office Clipboard. NameLocal=Office Clipboard. Id= 
+
+   1 controls
+
+   25 caption = Office Clipboard Id = 5746
+
+CommandBar  11 Name=XML Source. NameLocal=XML Source. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  12 Name=Research. NameLocal=Research. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  13 Name=XML Document. NameLocal=XML Document. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  14 Name=Signatures. NameLocal=Signatures. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  15 Name=Document Actions. NameLocal=Document Actions. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  16 Name=Clip Art. NameLocal=Clip Art. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  17 Name=Selection and Visibility. NameLocal=Selection and Visibility. Id= 
+
+   0 controls
+
+CommandBar  18 Name=Document Management. NameLocal=Document Management. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  19 Name=Document Updates. NameLocal=Document Updates. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  20 Name=Mail Merge Panes. NameLocal=Mail Merge Panes. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  21 Name=Fax Service. NameLocal=Fax Service. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  22 Name=Meeting Workspace. NameLocal=Meeting Workspace. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  23 Name=Attachment Options. NameLocal=Attachment Options. Id= 
+
+   1 controls
+
+   25 caption = Tas&k Pane Id = 5746
+
+CommandBar  24 Name=Menu Bar (Slide Show). NameLocal=Menu Bar (Slide Show). Id= 
+
+   5 controls
+
+   10 caption = &File Id = 30002
+
+   10 caption = &Edit Id = 30003
+
+   10 caption = &Browse Id = 30231
+
+   10 caption = &Window Id = 30009
+
+   10 caption = &Help Id = 30010
+
+CommandBar  25 Name=&Legacy Keyboard Support. NameLocal=&Legacy Keyboard Support. Id= 
+
+   6 controls
+
+   10 caption = &Edit Id = 30003
+
+   10 caption = &View Id = 30004
+
+   10 caption = &Insert Id = 30005
+
+   10 caption = F&ormat Id = 30006
+
+   10 caption = &Tools Id = 30007
+
+   10 caption = Sli&de Show Id = 30225
+
+CommandBar  26 Name=Standard. NameLocal=Standard. Id= 
+
+   26 controls
+
+   1 caption = &New Id = 2520
+
+   1 caption = &Open... Id = 23
+
+   1 caption = &Save Id = 3
+
+   1 caption = Permission Id = 9004
+
+   1 caption = M&ail Recipient (as Attachment)... Id = 2188
+
+   1 caption = &Quick Print Id = 2521
+
+   1 caption = Print Pre&view Id = 109
+
+   1 caption = &Spelling... Id = 2
+
+   1 caption = &Research... Id = 7343
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Format Painter Id = 108
+
+   6 caption = Can't &Undo Id = 128
+
+   6 caption = Can't &Redo Id = 129
+
+   1 caption = Ink &Annotations Id = 9071
+
+   1 caption = C&hart... Id = 17
+
+   16 caption = &Insert Table... Id = 8
+
+   1 caption = &Tables and Borders Toolbar Id = 916
+
+   1 caption = &Hyperlink... Id = 1576
+
+   1 caption = &Expand All Id = 706
+
+   1 caption = &Show Formatting Id = 252
+
+   1 caption = Show/Hide &Grid Id = 7055
+
+   12 caption = &Color/Grayscale Id = 5872
+
+   4 caption = &Zoom: Id = 1733
+
+   1 caption = Microsoft Office PowerPoint &Help Id = 984
+
+CommandBar  27 Name=Formatting. NameLocal=Formatting. Id= 
+
+   20 controls
+
+   4 caption = &Font: Id = 1728
+
+   4 caption = &Font Size: Id = 1731
+
+   1 caption = &Bold Id = 113
+
+   1 caption = &Italic Id = 114
+
+   1 caption = &Underline Id = 115
+
+   1 caption = &Shadow Id = 686
+
+   1 caption = Align &Left Id = 120
+
+   1 caption = &Center Id = 122
+
+   1 caption = Align &Right Id = 121
+
+   1 caption = &Numbering Id = 11
+
+   1 caption = &Bullets Id = 12
+
+   1 caption = &Left-to-Right Id = 1846
+
+   1 caption = &Right-to-Left Id = 1847
+
+   1 caption = &Increase Font Size Id = 403
+
+   1 caption = &Decrease Font Size Id = 404
+
+   1 caption = &Decrease Indent Id = 3508
+
+   1 caption = &Increase Indent Id = 3507
+
+   13 caption = &Font Color Id = 401
+
+   1 caption = De&sign Id = 5819
+
+   1 caption = &New Slide Id = 680
+
+CommandBar  28 Name=Slide Sorter. NameLocal=Slide Sorter. Id= 
+
+   4 controls
+
+   1 caption = &Hide Slide Id = 729
+
+   1 caption = &Rehearse Timings Id = 734
+
+   1 caption = &Summary Slide Id = 2761
+
+   1 caption = &New Slide Id = 680
+
+CommandBar  29 Name=Web. NameLocal=Web. Id= 
+
+   10 controls
+
+   1 caption = &Back Id = 1017
+
+   1 caption = &Forward Id = 1018
+
+   1 caption = &Stop Id = 1019
+
+   1 caption = &Refresh Id = 1020
+
+   1 caption = &Start Page Id = 1016
+
+   1 caption = Search the &Web Id = 1922
+
+   10 caption = Favorite&s Id = 30176
+
+   10 caption = &Go Id = 30328
+
+   1 caption = &Show Only Web Toolbar Id = 1023
+
+   4 caption = &Address: Id = 1740
+
+CommandBar  30 Name=Drawing. NameLocal=Drawing. Id= 
+
+   22 controls
+
+   10 caption = D&raw Id = 30013
+
+   1 caption = &Select Objects Id = 182
+
+   10 caption = A&utoShapes Id = 30177
+
+   1 caption = &Line Id = 130
+
+   1 caption = &Arrow Id = 243
+
+   1 caption = &Rectangle Id = 1111
+
+   1 caption = &Oval Id = 1119
+
+   1 caption = &Horizontal Id = 139
+
+   1 caption = &Vertical Id = 318
+
+   1 caption = &WordArt... Id = 1031
+
+   1 caption = Dia&gram... Id = 1032
+
+   1 caption = &Clip Art... Id = 682
+
+   1 caption = &Picture... Id = 931
+
+   1 caption = Ink &Drawing and Writing Id = 9405
+
+   13 caption = &Fill Color Id = 1691
+
+   13 caption = &Line Color Id = 1692
+
+   13 caption = &Font Color Id = 401
+
+   12 caption = &Line Style Id = 692
+
+   12 caption = &Dash Style Id = 693
+
+   12 caption = &Arrow Style Id = 694
+
+   12 caption = &Shadow Style Id = 394
+
+   12 caption = &3-D Style Id = 339
+
+CommandBar  31 Name=Print Preview. NameLocal=Print Preview. Id= 
+
+   11 controls
+
+   1 caption = Previous Page Id = 316
+
+   1 caption = Next Page Id = 317
+
+   1 caption = &Print... Id = 4
+
+   15 caption = Print What: Id = 7054
+
+   3 caption = Print What Id = 5877
+
+   4 caption = &Zoom: Id = 1733
+
+   1 caption = &Landscape Id = 6258
+
+   1 caption = Por&trait Id = 6259
+
+   10 caption = &Options Id = 31160
+
+   1 caption = &Close Id = 923
+
+   1 caption =  Id = 9728
+
+CommandBar  32 Name=Stop Recording. NameLocal=Stop Recording. Id= 
+
+   1 controls
+
+   1 caption = Stop &Recording Id = 2186
+
+CommandBar  33 Name=Slide Master View. NameLocal=Slide Master View. Id= 
+
+   6 controls
+
+   1 caption = &New Slide Id = 680
+
+   1 caption = &Delete Slide Id = 2696
+
+   1 caption = Preserve &Master Id = 6013
+
+   1 caption = Re&name Master Id = 6014
+
+   1 caption = Slide &Layout... Id = 700
+
+   1 caption = &Close Master View Id = 1567
+
+CommandBar  34 Name=Handout Master View. NameLocal=Handout Master View. Id= 
+
+   9 controls
+
+   1 caption = Show positioning of 1-per-page handouts Id = 5948
+
+   1 caption = Show positioning of 2-per-page handouts Id = 3051
+
+   1 caption = Show positioning of 3-per-page handouts Id = 3052
+
+   1 caption = Show positioning of 4-per-page handouts Id = 3619
+
+   1 caption = Show positioning of 6-per-page handouts Id = 3053
+
+   1 caption = Show positioning of 9-per-page handouts Id = 3620
+
+   1 caption = Show positioning of outline Id = 3054
+
+   1 caption = Slide &Layout... Id = 700
+
+   1 caption = &Close Master View Id = 1567
+
+CommandBar  35 Name=Notes Master View. NameLocal=Notes Master View. Id= 
+
+   2 controls
+
+   1 caption = Slide &Layout... Id = 700
+
+   1 caption = &Close Master View Id = 1567
+
+CommandBar  36 Name=Grayscale View. NameLocal=Grayscale View. Id= 
+
+   2 controls
+
+   10 caption = Settin&g Id = 31190
+
+   1 caption = &Close Grayscale View Id = 5873
+
+CommandBar  37 Name=WordArt. NameLocal=WordArt. Id= 
+
+   9 controls
+
+   1 caption = &WordArt... Id = 1031
+
+   1 caption = Edit Te&xt... Id = 2094
+
+   1 caption = &WordArt Gallery Id = 1606
+
+   1 caption = &Format Object... Id = 962
+
+   12 caption = &WordArt Shape Id = 1058
+
+   1 caption = &WordArt Same Letter Heights Id = 1063
+
+   1 caption = &WordArt Vertical Text Id = 1061
+
+   12 caption = &WordArt Alignment Id = 1059
+
+   12 caption = &WordArt Character Spacing Id = 1060
+
+CommandBar  38 Name=Picture. NameLocal=Picture. Id= 
+
+   14 controls
+
+   1 caption = &Picture... Id = 931
+
+   12 caption = &Color Id = 1403
+
+   1 caption = &More Contrast Id = 1064
+
+   1 caption = &Less Contrast Id = 1065
+
+   1 caption = &More Brightness Id = 1066
+
+   1 caption = &Less Brightness Id = 1067
+
+   1 caption = Cro&p Id = 732
+
+   1 caption = Rotate &Left 90° Id = 199
+
+   12 caption = &Line Style Id = 692
+
+   1 caption = &Compress Pictures... Id = 6382
+
+   1 caption = &Recolor Picture Id = 1364
+
+   1 caption = &Format Object... Id = 962
+
+   1 caption = &Set Transparent Color Id = 2827
+
+   1 caption = &Reset Picture Id = 1362
+
+CommandBar  39 Name=Drawing Canvas. NameLocal=Drawing Canvas. Id= 
+
+   3 controls
+
+   1 caption = Fit Id = 5866
+
+   1 caption = Ex&pand Id = 5916
+
+   1 caption = S&cale Drawing Id = 7067
+
+CommandBar  40 Name=Diagram. NameLocal=Diagram. Id= 
+
+   7 controls
+
+   1 caption = I&nsert Shape Id = 6933
+
+   1 caption = Move Shape &Backward Id = 6010
+
+   1 caption = Move Shape &Forward Id = 6011
+
+   1 caption = &Reverse Diagram Id = 6099
+
+   10 caption = &Layout Id = 31179
+
+   1 caption = &AutoFormat Id = 6068
+
+   10 caption = &Change to Id = 31180
+
+CommandBar  41 Name=Ink Drawing and Writing. NameLocal=Ink Drawing and Writing. Id= 
+
+   6 controls
+
+   13 caption = &Drawing and Writing Pen Id = 7880
+
+   1 caption = &Eraser Id = 7502
+
+   1 caption = &Select Objects Id = 182
+
+   13 caption = &Line Color Id = 1692
+
+   12 caption = &Line Style Id = 692
+
+   1 caption = &Stop Erasing Id = 9438
+
+CommandBar  42 Name=Ink Annotations. NameLocal=Ink Annotations. Id= 
+
+   7 controls
+
+   13 caption = &Annotation Pen Id = 9122
+
+   1 caption = &Eraser Id = 9523
+
+   1 caption = &Select Objects Id = 182
+
+   13 caption = &Line Color Id = 1692
+
+   12 caption = &Line Style Id = 692
+
+   1 caption = M&arkup Id = 6547
+
+   1 caption = &Stop Erasing Id = 9524
+
+CommandBar  43 Name=Tables and Borders. NameLocal=Tables and Borders. Id= 
+
+   17 controls
+
+   1 caption = Dra&w Table Id = 2059
+
+   1 caption = &Eraser Id = 2060
+
+   9 caption = &Border Style Id = 1724
+
+   9 caption = &Border Width Id = 2622
+
+   12 caption = &Border Color Id = 2628
+
+   14 caption = &Borders Id = 203
+
+   13 caption = &Fill Color Id = 1691
+
+   10 caption = T&able Id = 30008
+
+   1 caption = &Merge Cells Id = 798
+
+   1 caption = S&plit Cells... Id = 800
+
+   1 caption = Align &Top Id = 2061
+
+   1 caption = Center &Vertically Id = 2062
+
+   1 caption = Align &Bottom Id = 2063
+
+   1 caption = Distribute Rows Eve&nly Id = 2068
+
+   1 caption = Distribute Columns Evenl&y Id = 2067
+
+   1 caption = Set &Left-to-Right Table Id = 3954
+
+   1 caption = Set &Right-to-Left Table Id = 3955
+
+CommandBar  44 Name=Organization Chart. NameLocal=Organization Chart. Id= 
+
+   6 controls
+
+   13 caption = I&nsert Shape Id = 6925
+
+   10 caption = &Layout Id = 31158
+
+   10 caption = Sele&ct Id = 31181
+
+   1 caption = Fit &Text Id = 10029
+
+   1 caption = &Autoformat Id = 6949
+
+   4 caption = &Zoom: Id = 1733
+
+CommandBar  45 Name=Rehearsal. NameLocal=Rehearsal. Id= 
+
+   5 controls
+
+   1 caption = &Next Id = 3849
+
+   1 caption = &Pause Id = 3848
+
+   2 caption = &Slide Time Id = 3846
+
+   1 caption = &Repeat Id = 3847
+
+   15 caption = 0:00:00 Id = 3845
+
+CommandBar  46 Name=Reviewing. NameLocal=Reviewing. Id= 
+
+   7 controls
+
+   1 caption = M&arkup Id = 6547
+
+   1 caption = &Previous Item Id = 6546
+
+   1 caption = &Next Item Id = 6545
+
+   1 caption = Ink &Annotations Id = 9071
+
+   1 caption = New Co&mment Id = 1589
+
+   1 caption = &Edit Comment Id = 2056
+
+   13 caption = &Delete Comment Id = 6544
+
+CommandBar  47 Name=Shadow Settings. NameLocal=Shadow Settings. Id= 
+
+   6 controls
+
+   1 caption = &Shadow On/Off Id = 2175
+
+   1 caption = &Nudge Shadow Up Id = 1068
+
+   1 caption = &Nudge Shadow Down Id = 1069
+
+   1 caption = &Nudge Shadow Left Id = 1070
+
+   1 caption = &Nudge Shadow Right Id = 1071
+
+   13 caption = &Shadow Color Id = 1693
+
+CommandBar  48 Name=3-D Settings. NameLocal=3-D Settings. Id= 
+
+   10 controls
+
+   1 caption = &3-D On/Off Id = 1374
+
+   1 caption = &Tilt Down Id = 1375
+
+   1 caption = &Tilt Up Id = 1376
+
+   1 caption = &Tilt Left Id = 1377
+
+   1 caption = &Tilt Right Id = 1378
+
+   12 caption = &Depth Id = 1379
+
+   12 caption = &Direction Id = 1380
+
+   12 caption = &Lighting Id = 1382
+
+   12 caption = &Surface Id = 1383
+
+   13 caption = &3-D Color Id = 1694
+
+CommandBar  49 Name=Control Toolbox. NameLocal=Control Toolbox. Id= 
+
+   15 controls
+
+   1 caption = Propert&ies Id = 222
+
+   1 caption = &View Code Id = 1561
+
+   1 caption = C&heck Box Id = 1848
+
+   1 caption = &Text Box Id = 1850
+
+   1 caption = Command &Button Id = 1851
+
+   1 caption = &Option Button Id = 1852
+
+   1 caption = &List Box Id = 1853
+
+   1 caption = Combo Bo&x Id = 1854
+
+   1 caption = To&ggle Button Id = 1855
+
+   1 caption = Spi&n Button Id = 1856
+
+   1 caption = &Scroll Bar Id = 1857
+
+   1 caption = L&abel Id = 1858
+
+   1 caption = &Image Id = 2089
+
+   7 caption = &More Controls... Id = 642
+
+   1 caption = Document Panel Id = 14596
+
+CommandBar  50 Name=Visual Basic. NameLocal=Visual Basic. Id= 
+
+   4 controls
+
+   1 caption = &Macros... Id = 186
+
+   1 caption = &Record New Macro... Id = 184
+
+   1 caption = &Security... Id = 3627
+
+   1 caption = &Visual Basic Editor Id = 1695
+
+CommandBar  51 Name=Outlining. NameLocal=Outlining. Id= 
+
+   10 controls
+
+   1 caption = &Promote Id = 132
+
+   1 caption = &Demote Id = 133
+
+   1 caption = Move &Up Id = 134
+
+   1 caption = &Move Down Id = 135
+
+   1 caption = &Collapse Id = 138
+
+   1 caption = &Expand Id = 137
+
+   1 caption = &Collapse All Id = 705
+
+   1 caption = &Expand All Id = 706
+
+   1 caption = &Summary Slide Id = 2761
+
+   1 caption = &Show Formatting Id = 252
+
+CommandBar  52 Name=Shortcut Menus. NameLocal=Shortcut Menus. Id= 
+
+   4 controls
+
+   10 caption = Text Id = 30400
+
+   10 caption = Table Id = 30389
+
+   10 caption = Draw Id = 30399
+
+   10 caption = SlideShow Id = 30401
+
+CommandBar  53 Name=Slider Sorter. NameLocal=Slider Sorter. Id= 
+
+   9 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &New Slide Id = 680
+
+   1 caption = &Delete Slide Id = 2696
+
+   1 caption = Publish &Slides Id = 11839
+
+   10 caption = Check for &Updates Id = 31457
+
+   1 caption = Bac&kground... Id = 1706
+
+   1 caption = &Hide Slide Id = 729
+
+CommandBar  54 Name=Thumbnails. NameLocal=Thumbnails. Id= 
+
+   16 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &New Slide Id = 680
+
+   1 caption = &Insert Layout Id = 11236
+
+   1 caption = Duplic&ate Slide Id = 2890
+
+   1 caption = &Delete Slide Id = 2696
+
+   1 caption = Preserve &Master Id = 6013
+
+   1 caption = Re&name Master Id = 6014
+
+   1 caption = Publish &Slides Id = 11839
+
+   10 caption = Check for &Updates Id = 31457
+
+   1 caption = Slide &Layout... Id = 700
+
+   1 caption = &Reset Slide Id = 6264
+
+   1 caption = Bac&kground... Id = 1706
+
+   1 caption = &Photo Album... Id = 7064
+
+   1 caption = &Hide Slide Id = 729
+
+CommandBar  55 Name=Slide Gap. NameLocal=Slide Gap. Id= 
+
+   5 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &New Slide Id = 680
+
+   1 caption = &Insert Layout Id = 11236
+
+CommandBar  56 Name=Notes Pane. NameLocal=Notes Pane. Id= 
+
+   8 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = Recon&vert Id = 3720
+
+   1 caption = &Font... Id = 253
+
+   1 caption = Loo&k Up... Id = 7685
+
+   1 caption = &Define... Id = 1721
+
+   10 caption = S&ynonyms Id = 30475
+
+CommandBar  57 Name=Outliner. NameLocal=Outliner. Id= 
+
+   25 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = Recon&vert Id = 3720
+
+   1 caption = &Show Formatting Id = 252
+
+   1 caption = &Summary Slide Id = 2761
+
+   1 caption = &Promote Id = 132
+
+   1 caption = &Demote Id = 133
+
+   1 caption = Move &Up Id = 134
+
+   1 caption = &Move Down Id = 135
+
+   1 caption = &New Slide Id = 680
+
+   1 caption = &Delete Slide Id = 2696
+
+   1 caption = Publish &Slides Id = 11839
+
+   10 caption = Check for &Updates Id = 31457
+
+   1 caption = &Font... Id = 253
+
+   1 caption = &Collapse Id = 138
+
+   1 caption = &Expand Id = 137
+
+   1 caption = &Hyperlink... Id = 1576
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+   1 caption = Loo&k Up... Id = 7685
+
+   1 caption = &Define... Id = 1721
+
+   10 caption = S&ynonyms Id = 30475
+
+CommandBar  58 Name=Slide Show. NameLocal=Slide Show. Id= 
+
+   11 controls
+
+   1 caption = &Next Id = 2909
+
+   1 caption = &Previous Id = 2908
+
+   1 caption = Last &Viewed Id = 3150
+
+   10 caption = &Go to Slide Id = 30392
+
+   10 caption = Custom Sho&w Id = 30393
+
+   10 caption = S&creen Id = 30224
+
+   10 caption = P&ointer Options Id = 30227
+
+   1 caption = &Help Id = 926
+
+   1 caption = Pau&se Id = 2910
+
+   1 caption = &Pause Narration Id = 3148
+
+   1 caption = &End Show Id = 708
+
+CommandBar  59 Name=Slide Show. NameLocal=Slide Show. Id= 
+
+   10 controls
+
+   1 caption = &Next Id = 2909
+
+   1 caption = &Previous Id = 2908
+
+   1 caption = Last &Viewed Id = 3150
+
+   10 caption = &Go to Slide Id = 30392
+
+   10 caption = Custom Sho&w Id = 30393
+
+   10 caption = S&creen Id = 30224
+
+   1 caption = &Help Id = 926
+
+   1 caption = Pau&se Id = 2910
+
+   1 caption = &Pause Narration Id = 3148
+
+   1 caption = &End Show Id = 708
+
+CommandBar  60 Name=Nondefault Drag and Drop. NameLocal=Nondefault Drag and Drop. Id= 
+
+   9 controls
+
+   1 caption = Move Id = 2046
+
+   1 caption = Copy Id = 2045
+
+   1 caption = Copy Object Id = 2157
+
+   1 caption = Link Object Id = 3085
+
+   1 caption = Insert Hyperlink Id = 2159
+
+   1 caption = Insert Object as Icon Id = 3087
+
+   1 caption = Insert Hyperlink Id = 2159
+
+   1 caption = Attach Hyperlink Id = 3089
+
+   1 caption = C&ancel Id = 569
+
+CommandBar  61 Name=Curve. NameLocal=Curve. Id= 
+
+   20 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = Copy Ink As &Text Id = 9382
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Save as Picture... Id = 5736
+
+   1 caption = &Edit Points Id = 206
+
+   1 caption = Ope&n Path Id = 2693
+
+   1 caption = C&lose Path Id = 1420
+
+   10 caption = &Grouping Id = 30175
+
+   10 caption = O&rder Id = 30078
+
+   1 caption = Set AutoShape &Defaults Id = 2179
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+   1 caption = &Hyperlink... Id = 1576
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+CommandBar  62 Name=OLE Object. NameLocal=OLE Object. Id= 
+
+   12 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Save as Picture... Id = 5736
+
+   10 caption = Edit Object Id = 30112
+
+   1 caption = &Update Link Id = 2959
+
+   10 caption = &Grouping Id = 30175
+
+   10 caption = O&rder Id = 30078
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+CommandBar  63 Name=Connector. NameLocal=Connector. Id= 
+
+   15 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Save as Picture... Id = 5736
+
+   1 caption = &Object Id = 961
+
+   1 caption = &Font... Id = 253
+
+   1 caption = &Straight Connector Id = 2091
+
+   1 caption = &Elbow Connector Id = 2092
+
+   1 caption = C&urved Connector Id = 2093
+
+   1 caption = Rerou&te Connectors Id = 1033
+
+   1 caption = Set AutoShape &Defaults Id = 2179
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+CommandBar  64 Name=WordArt Context Menu. NameLocal=WordArt Context Menu. Id= 
+
+   18 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Save as Picture... Id = 5736
+
+   1 caption = Recon&vert Id = 3720
+
+   1 caption = Edit Te&xt... Id = 2094
+
+   10 caption = &Grouping Id = 30175
+
+   10 caption = O&rder Id = 30078
+
+   1 caption = Set AutoShape &Defaults Id = 2179
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+   1 caption = &Hyperlink... Id = 1576
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+CommandBar  65 Name=Rotate Mode. NameLocal=Rotate Mode. Id= 
+
+   11 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Exit Rotate Id = 1412
+
+   1 caption = Set AutoShape &Defaults Id = 2179
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+   1 caption = Loo&k Up... Id = 7685
+
+   1 caption = &Define... Id = 1721
+
+CommandBar  66 Name=Curve Segment. NameLocal=Curve Segment. Id= 
+
+   12 controls
+
+   1 caption = &Add Point Id = 1415
+
+   1 caption = De&lete Segment Id = 2692
+
+   1 caption = Ope&n Path Id = 2693
+
+   1 caption = C&lose Path Id = 1420
+
+   1 caption = &Straight Segment Id = 1417
+
+   1 caption = &Curved Segment Id = 1418
+
+   1 caption = Exit &Edit Points Id = 1425
+
+   1 caption = Set AutoShape &Defaults Id = 2179
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+CommandBar  67 Name=Curve Node. NameLocal=Curve Node. Id= 
+
+   14 controls
+
+   1 caption = &Add Point Id = 1415
+
+   1 caption = De&lete Point Id = 1416
+
+   1 caption = Ope&n Path Id = 2693
+
+   1 caption = C&lose Path Id = 1420
+
+   1 caption = Au&to Point Id = 1421
+
+   1 caption = &Smooth Point Id = 1422
+
+   1 caption = St&raight Point Id = 1423
+
+   1 caption = &Corner Point Id = 1424
+
+   1 caption = Exit &Edit Points Id = 1425
+
+   1 caption = Set AutoShape &Defaults Id = 2179
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+CommandBar  68 Name=ActiveX Control. NameLocal=ActiveX Control. Id= 
+
+   16 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Save as Picture... Id = 5736
+
+   1 caption = Propert&ies Id = 222
+
+   1 caption = &View Code Id = 1561
+
+   10 caption = Edit Object Id = 30112
+
+   10 caption = &Grouping Id = 30175
+
+   10 caption = O&rder Id = 30078
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+CommandBar  69 Name=Spelling. NameLocal=Spelling. Id= 
+
+   14 controls
+
+   1 caption = no suggestions Id = 2799
+
+   1 caption = Spelling Change Id = 2982
+
+   1 caption = Spelling Change Id = 2982
+
+   1 caption = Spelling Change Id = 2982
+
+   1 caption = Spelling Change Id = 2982
+
+   1 caption = Spelling Change Id = 2982
+
+   1 caption = &Ignore All Id = 2796
+
+   1 caption = &Ignore Id = 3901
+
+   1 caption = &Add to Dictionary Id = 2797
+
+   1 caption = &Spelling... Id = 2
+
+   1 caption = Loo&k Up... Id = 7685
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+CommandBar  70 Name=Canvas Popup. NameLocal=Canvas Popup. Id= 
+
+   19 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Save as Picture... Id = 5736
+
+   1 caption = Fit Id = 5866
+
+   1 caption = Ex&pand Id = 5916
+
+   1 caption = S&cale Drawing Id = 7067
+
+   10 caption = &Grouping Id = 30175
+
+   10 caption = O&rder Id = 30078
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = Use A&utoFormat Id = 7000
+
+   1 caption = &Format Object... Id = 962
+
+   1 caption = &Hyperlink... Id = 1576
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+CommandBar  71 Name=Frames. NameLocal=Frames. Id= 
+
+   11 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = Publish &Slides Id = 11839
+
+   1 caption = &Save Background... Id = 5835
+
+   1 caption = &Ruler Id = 179
+
+   1 caption = Gr&id and Guides... Id = 217
+
+   1 caption = Slide &Layout... Id = 700
+
+   1 caption = &Reset Slide Id = 6264
+
+   1 caption = Bac&kground... Id = 1706
+
+   12 caption = Grayscale S&etting Id = 742
+
+CommandBar  72 Name=Notes View Slide. NameLocal=Notes View Slide. Id= 
+
+   5 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = Recon&vert Id = 3720
+
+   1 caption = &Object Id = 961
+
+CommandBar  73 Name=Slide Show Browse. NameLocal=Slide Show Browse. Id= 
+
+   7 controls
+
+   1 caption = &Advance Id = 710
+
+   1 caption = &Reverse Id = 711
+
+   1 caption = &Print... Id = 4
+
+   1 caption = &Copy Slide Id = 3145
+
+   1 caption = &Edit Slides Id = 3146
+
+   1 caption = F&ull Screen Id = 178
+
+   1 caption = &End Show Id = 708
+
+CommandBar  74 Name=PowerPoint Previewer. NameLocal=PowerPoint Previewer. Id= 
+
+   3 controls
+
+   1 caption = &Next Id = 2909
+
+   1 caption = &Previous Id = 2908
+
+   1 caption = &Copy Slide Id = 3145
+
+CommandBar  75 Name=Hyperlinked Object. NameLocal=Hyperlinked Object. Id= 
+
+   3 controls
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Add to Favorites... Id = 1022
+
+CommandBar  76 Name=Tables. NameLocal=Tables. Id= 
+
+   14 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = &Save as Picture... Id = 5736
+
+   1 caption = &Font... Id = 253
+
+   1 caption = &Bullets and Numbering... Id = 783
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Ungroup Id = 165
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = &Borders and Shading... Id = 781
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+CommandBar  77 Name=Table Cells. NameLocal=Table Cells. Id= 
+
+   18 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = Recon&vert Id = 3720
+
+   1 caption = &Font... Id = 253
+
+   1 caption = &Bullets and Numbering... Id = 783
+
+   1 caption = &Table... Id = 3680
+
+   1 caption = &Delete Cells... Id = 2164
+
+   1 caption = &Merge Cells Id = 798
+
+   1 caption = &Borders and Shading... Id = 781
+
+   12 caption = Grayscale S&etting Id = 742
+
+   1 caption = Select T&able Id = 803
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+   1 caption = Loo&k Up... Id = 7685
+
+   10 caption = S&ynonyms Id = 30475
+
+CommandBar  78 Name=Organization Chart Popup. NameLocal=Organization Chart Popup. Id= 
+
+   14 controls
+
+   1 caption = &Object Id = 961
+
+   1 caption = &Subordinate Id = 5856
+
+   1 caption = &Coworker Id = 5855
+
+   1 caption = &Assistant Id = 5849
+
+   1 caption = &Delete Id = 5858
+
+   10 caption = &Layout Id = 31158
+
+   10 caption = Sele&ct Id = 31181
+
+   1 caption = Use A&utoFormat Id = 7000
+
+   1 caption = &Format Object... Id = 962
+
+   1 caption = &Hyperlink... Id = 1576
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+CommandBar  79 Name=Diagram. NameLocal=Diagram. Id= 
+
+   5 controls
+
+   1 caption = &Object Id = 961
+
+   1 caption = I&nsert Shape Id = 6933
+
+   1 caption = &Delete Shape Id = 6829
+
+   1 caption = Use A&utoFormat Id = 7000
+
+   1 caption = &Format Object... Id = 962
+
+CommandBar  80 Name=OrgChart Text Edit PopUp. NameLocal=OrgChart Text Edit PopUp. Id= 
+
+   18 controls
+
+   1 caption = Cu&t Id = 21
+
+   1 caption = &Copy Id = 19
+
+   1 caption = &Paste Id = 22
+
+   1 caption = Recon&vert Id = 3720
+
+   1 caption = &Object Id = 961
+
+   1 caption = &Font... Id = 253
+
+   1 caption = &Bullets and Numbering... Id = 783
+
+   1 caption = Custo&m Animation... Id = 730
+
+   1 caption = &Action Settings... Id = 2892
+
+   1 caption = &Format Object... Id = 962
+
+   1 caption = &Define... Id = 1721
+
+   1 caption = &Hyperlink... Id = 1576
+
+   1 caption = Edit &Hyperlink... Id = 1577
+
+   1 caption = &Open Hyperlink Id = 2664
+
+   1 caption = &Copy Hyperlink Id = 1575
+
+   1 caption = &Remove Hyperlink Id = 3626
+
+   1 caption = Loo&k Up... Id = 7685
+
+   10 caption = S&ynonyms Id = 30475
+
+CommandBar  81 Name=Comment Popup. NameLocal=Comment Popup. Id= 
+
+   4 controls
+
+   1 caption = &Edit Comment Id = 2056
+
+   1 caption = &Copy Text Id = 19
+
+   1 caption = New Co&mment Id = 1589
+
+   1 caption = &Delete Comment Id = 6544
+
+CommandBar  82 Name=Slide View Ink Annotation Popup. NameLocal=Slide View Ink Annotation Popup. Id= 
+
+   3 controls
+
+   1 caption = Show &Details... Id = 6257
+
+   1 caption = &Edit Annotation Id = 7634
+
+   1 caption = &Delete Annotation Id = 7635
+
+CommandBar  83 Name=Fill Color. NameLocal=Fill Color. Id= 
+
+   6 controls
+
+   18 caption = &No Color Id = 1453
+
+   18 caption = &Automatic Color Id = 1454
+
+   18 caption = &Color Scheme Id = 1455
+
+   18 caption = &Recently Used Colors Id = 1457
+
+   1 caption = &More Fill Colors... Id = 1051
+
+   1 caption = &Fill Effects... Id = 1006
+
+CommandBar  84 Name=Line Color. NameLocal=Line Color. Id= 
+
+   6 controls
+
+   18 caption = &No Color Id = 1458
+
+   18 caption = &Automatic Color Id = 1459
+
+   18 caption = &Color Scheme Id = 1460
+
+   18 caption = &Recently Used Colors Id = 1462
+
+   1 caption = &More Outline Colors... Id = 1052
+
+   1 caption = &Patterned Lines... Id = 1053
+
+CommandBar  85 Name=Font Color. NameLocal=Font Color. Id= 
+
+   4 controls
+
+   18 caption = &Automatic Color Id = 1926
+
+   18 caption = &Color Scheme Id = 1927
+
+   18 caption = &Recently Used Colors Id = 2523
+
+   1 caption = &More Colors... Id = 1005
+
+CommandBar  86 Name=Annotation Pens. NameLocal=Annotation Pens. Id= 
+
+   0 controls
+
+CommandBar  87 Name=Drawing and Writing Pens. NameLocal=Drawing and Writing Pens. Id= 
+
+   0 controls
+
+CommandBar  88 Name=Annotation Pens. NameLocal=Annotation Pens. Id= 
+
+   9 controls
+
+   1 caption = Red Id = 9072
+
+   1 caption = Accent 1 Color Id = 9073
+
+   1 caption = Accent 2 Color Id = 9074
+
+   1 caption = Red Id = 9075
+
+   1 caption = Accent 1 Color Id = 9076
+
+   1 caption = Accent 2 Color Id = 9077
+
+   1 caption = Yellow Id = 9078
+
+   1 caption = Turquoise Id = 9079
+
+   1 caption = Pink Id = 9080
+
+CommandBar  89 Name=Drawing and Writing Pens. NameLocal=Drawing and Writing Pens. Id= 
+
+   9 controls
+
+   1 caption = Text and Line Color Id = 9062
+
+   1 caption = Accent 1 Color Id = 9063
+
+   1 caption = Accent 2 Color Id = 9064
+
+   1 caption = Text and Line Color Id = 9065
+
+   1 caption = Accent 1 Color Id = 9066
+
+   1 caption = Accent 2 Color Id = 9067
+
+   1 caption = Yellow Id = 9068
+
+   1 caption = Turquoise Id = 9069
+
+   1 caption = Pink Id = 9070
+
+CommandBar  90 Name=Order. NameLocal=Order. Id= 
+
+   4 controls
+
+   1 caption = Bring to F&ront Id = 166
+
+   1 caption = Send to Bac&k Id = 167
+
+   1 caption = Bring &Forward Id = 170
+
+   1 caption = Send &Backward Id = 171
+
+CommandBar  91 Name=Nudge. NameLocal=Nudge. Id= 
+
+   4 controls
+
+   1 caption = &Up Id = 1035
+
+   1 caption = &Down Id = 1036
+
+   1 caption = &Left Id = 1037
+
+   1 caption = &Right Id = 1038
+
+CommandBar  92 Name=Rotate or Flip. NameLocal=Rotate or Flip. Id= 
+
+   5 controls
+
+   1 caption = Free Ro&tate Id = 688
+
+   1 caption = Rotate &Left 90° Id = 199
+
+   1 caption = Rotate &Right 90° Id = 198
+
+   1 caption = Flip &Horizontal Id = 196
+
+   1 caption = Flip &Vertical Id = 197
+
+CommandBar  93 Name=Align or Distribute. NameLocal=Align or Distribute. Id= 
+
+   12 controls
+
+   1 caption = Align &Left Id = 664
+
+   1 caption = Align &Center Id = 668
+
+   1 caption = Align &Right Id = 665
+
+   1 caption = Align &Top Id = 666
+
+   1 caption = Align &Middle Id = 669
+
+   1 caption = Align &Bottom Id = 667
+
+   1 caption = Distribute &Horizontally Id = 408
+
+   1 caption = Distribute &Vertically Id = 465
+
+   1 caption = Align to slide Id = 1039
+
+   1 caption = Relative t&o Canvas Id = 5976
+
+   1 caption = Relative t&o Organization Chart Id = 7070
+
+   1 caption = Relative t&o Page Id = 1039
+
+CommandBar  94 Name=Insert Shape. NameLocal=Insert Shape. Id= 
+
+   3 controls
+
+   1 caption = &Subordinate Id = 5856
+
+   1 caption = &Coworker Id = 5855
+
+   1 caption = &Assistant Id = 5849
+
+CommandBar  95 Name=Lines. NameLocal=Lines. Id= 
+
+   6 controls
+
+   1 caption = &Line Id = 130
+
+   1 caption = &Arrow Id = 243
+
+   1 caption = &Double Arrow Id = 1639
+
+   1 caption = &Curve Id = 1041
+
+   1 caption = &Freeform Id = 200
+
+   1 caption = &Scribble Id = 409
+
+CommandBar  96 Name=Connectors. NameLocal=Connectors. Id= 
+
+   9 controls
+
+   1 caption = St&raight Connector Id = 1042
+
+   1 caption = &Straight Arrow Connector Id = 2640
+
+   1 caption = &Straight Double-Arrow Connector Id = 2641
+
+   1 caption = &Elbow Connector Id = 1043
+
+   1 caption = &Elbow Arrow Connector Id = 2642
+
+   1 caption = &Elbow Double-Arrow Connector Id = 2643
+
+   1 caption = C&urved Connector Id = 1044
+
+   1 caption = &Curved Arrow Connector Id = 2644
+
+   1 caption = &Curved Double-Arrow Connector Id = 2645
+
+CommandBar  97 Name=Basic Shapes. NameLocal=Basic Shapes. Id= 
+
+   32 controls
+
+   1 caption = &Rectangle Id = 1111
+
+   1 caption = &Parallelogram Id = 1112
+
+   1 caption = &Trapezoid Id = 1113
+
+   1 caption = &Diamond Id = 1114
+
+   1 caption = &Rounded Rectangle Id = 1115
+
+   1 caption = &Octagon Id = 1116
+
+   1 caption = &Isosceles Triangle Id = 1117
+
+   1 caption = &Right Triangle Id = 1118
+
+   1 caption = &Oval Id = 1119
+
+   1 caption = &Hexagon Id = 1120
+
+   1 caption = &Cross Id = 1121
+
+   1 caption = &Regular Pentagon Id = 1124
+
+   1 caption = &Can Id = 1126
+
+   1 caption = &Cube Id = 1122
+
+   1 caption = &Bevel Id = 1130
+
+   1 caption = &Folded Corner Id = 1129
+
+   1 caption = &Smiley Face Id = 1131
+
+   1 caption = &Donut Id = 1132
+
+   1 caption = &"No" Symbol Id = 1133
+
+   1 caption = &Block Arc Id = 1134
+
+   1 caption = &Heart Id = 1141
+
+   1 caption = &Lightning Bolt Id = 1140
+
+   1 caption = &Sun Id = 2634
+
+   1 caption = &Moon Id = 2635
+
+   1 caption = &Arc Id = 1139
+
+   1 caption = &Double Bracket Id = 2636
+
+   1 caption = &Double Brace Id = 2637
+
+   1 caption = &Plaque Id = 1123
+
+   1 caption = &Left Bracket Id = 1135
+
+   1 caption = &Right Bracket Id = 1136
+
+   1 caption = &Left Brace Id = 1137
+
+   1 caption = &Right Brace Id = 1138
+
+CommandBar  98 Name=Callouts. NameLocal=Callouts. Id= 
+
+   20 controls
+
+   1 caption = &Rectangular Callout Id = 1172
+
+   1 caption = &Rounded Rectangular Callout Id = 1173
+
+   1 caption = &Oval Callout Id = 1174
+
+   1 caption = &Cloud Callout Id = 1175
+
+   1 caption = &Line Callout 1 Id = 1219
+
+   1 caption = &Line Callout 2 Id = 1176
+
+   1 caption = &Line Callout 3 Id = 1177
+
+   1 caption = &Line Callout 4 Id = 1178
+
+   1 caption = &Line Callout 1 (Accent Bar) Id = 1220
+
+   1 caption = &Line Callout 2 (Accent Bar) Id = 1221
+
+   1 caption = &Line Callout 3 (Accent Bar) Id = 1222
+
+   1 caption = &Line Callout 4 (Accent Bar) Id = 1223
+
+   1 caption = &Line Callout 1 (No Border) Id = 1224
+
+   1 caption = &Line Callout 2 (No Border) Id = 1225
+
+   1 caption = &Line Callout 3 (No Border) Id = 1226
+
+   1 caption = &Line Callout 4 (No Border) Id = 1227
+
+   1 caption = &Line Callout 1 (Border and Accent Bar) Id = 1228
+
+   1 caption = &Line Callout 2 (Border and Accent Bar) Id = 1229
+
+   1 caption = &Line Callout 3 (Border and Accent Bar) Id = 1230
+
+   1 caption = &Line Callout 4 (Border and Accent Bar) Id = 1110
+
+CommandBar  99 Name=Flowchart. NameLocal=Flowchart. Id= 
+
+   28 controls
+
+   1 caption = &Flowchart: Process Id = 1190
+
+   1 caption = &Flowchart: Alternate Process Id = 1191
+
+   1 caption = &Flowchart: Decision Id = 1192
+
+   1 caption = &Flowchart: Data Id = 1193
+
+   1 caption = &Flowchart: Predefined Process Id = 1194
+
+   1 caption = &Flowchart: Internal Storage Id = 1195
+
+   1 caption = &Flowchart: Document Id = 1196
+
+   1 caption = &Flowchart: Multidocument Id = 1197
+
+   1 caption = &Flowchart: Terminator Id = 1198
+
+   1 caption = &Flowchart: Preparation Id = 1199
+
+   1 caption = &Flowchart: Manual Input Id = 1200
+
+   1 caption = &Flowchart: Manual Operation Id = 1201
+
+   1 caption = &Flowchart: Connector Id = 1202
+
+   1 caption = &Flowchart: Off-page Connector Id = 1203
+
+   1 caption = &Flowchart: Card Id = 1204
+
+   1 caption = &Flowchart: Punched Tape Id = 1205
+
+   1 caption = &Flowchart: Summing Junction Id = 1206
+
+   1 caption = &Flowchart: Or Id = 1207
+
+   1 caption = &Flowchart: Collate Id = 1208
+
+   1 caption = &Flowchart: Sort Id = 1209
+
+   1 caption = &Flowchart: Extract Id = 1210
+
+   1 caption = &Flowchart: Merge Id = 1211
+
+   1 caption = &Flowchart: Stored Data Id = 1213
+
+   1 caption = &Flowchart: Delay Id = 1218
+
+   1 caption = &Flowchart: Sequential Access Storage Id = 1214
+
+   1 caption = &Flowchart: Magnetic Disk Id = 1215
+
+   1 caption = &Flowchart: Direct Access Storage Id = 1216
+
+   1 caption = &Flowchart: Display Id = 1217
+
+CommandBar  100 Name=Block Arrows. NameLocal=Block Arrows. Id= 
+
+   28 controls
+
+   1 caption = &Right Arrow Id = 1142
+
+   1 caption = &Left Arrow Id = 1143
+
+   1 caption = &Up Arrow Id = 1144
+
+   1 caption = &Down Arrow Id = 1145
+
+   1 caption = &Left-Right Arrow Id = 1146
+
+   1 caption = &Up-Down Arrow Id = 1147
+
+   1 caption = &Quad Arrow Id = 1148
+
+   1 caption = &Left-Right-Up Arrow Id = 1149
+
+   1 caption = &Bent Arrow Id = 1152
+
+   1 caption = &U-Turn Arrow Id = 1153
+
+   1 caption = &Left-Up Arrow Id = 1150
+
+   1 caption = &Bent-Up Arrow Id = 1151
+
+   1 caption = &Curved Right Arrow Id = 1160
+
+   1 caption = &Curved Left Arrow Id = 1161
+
+   1 caption = &Curved Up Arrow Id = 1162
+
+   1 caption = &Curved Down Arrow Id = 1163
+
+   1 caption = &Striped Right Arrow Id = 1154
+
+   1 caption = &Notched Right Arrow Id = 1155
+
+   1 caption = &Pentagon Id = 1156
+
+   1 caption = &Chevron Id = 1157
+
+   1 caption = &Right Arrow Callout Id = 1164
+
+   1 caption = &Left Arrow Callout Id = 1165
+
+   1 caption = &Up Arrow Callout Id = 1166
+
+   1 caption = &Down Arrow Callout Id = 1167
+
+   1 caption = &Left-Right Arrow Callout Id = 1168
+
+   1 caption = &Up-Down Arrow Callout Id = 1169
+
+   1 caption = &Quad Arrow Callout Id = 1170
+
+   1 caption = &Circular Arrow Id = 1158
+
+CommandBar  101 Name=Stars & Banners. NameLocal=Stars & Banners. Id= 
+
+   16 controls
+
+   1 caption = &Explosion 1 Id = 1188
+
+   1 caption = &Explosion 2 Id = 1189
+
+   1 caption = &4-Point Star Id = 2638
+
+   1 caption = &5-Point Star Id = 1183
+
+   1 caption = &8-Point Star Id = 1184
+
+   1 caption = &16-Point Star Id = 1185
+
+   1 caption = &24-Point Star Id = 1186
+
+   1 caption = &32-Point Star Id = 1187
+
+   1 caption = &Up Ribbon Id = 1180
+
+   1 caption = &Down Ribbon Id = 1179
+
+   1 caption = &Curved Up Ribbon Id = 1182
+
+   1 caption = &Curved Down Ribbon Id = 1181
+
+   1 caption = &Vertical Scroll Id = 1127
+
+   1 caption = &Horizontal Scroll Id = 1128
+
+   1 caption = &Wave Id = 1125
+
+   1 caption = &Double Wave Id = 2639
+
+CommandBar  102 Name=Action Buttons. NameLocal=Action Buttons. Id= 
+
+   12 controls
+
+   1 caption = &Action Button: Custom Id = 2919
+
+   1 caption = &Action Button: Home Id = 2920
+
+   1 caption = &Action Button: Help Id = 2921
+
+   1 caption = &Action Button: Information Id = 2922
+
+   1 caption = &Action Button: Back or Previous Id = 2923
+
+   1 caption = &Action Button: Forward or Next Id = 2924
+
+   1 caption = &Action Button: Beginning Id = 2925
+
+   1 caption = &Action Button: End Id = 2926
+
+   1 caption = &Action Button: Return Id = 2927
+
+   1 caption = &Action Button: Document Id = 2928
+
+   1 caption = &Action Button: Sound Id = 2929
+
+   1 caption = &Action Button: Movie Id = 2930
+
+CommandBar  103 Name=Borders. NameLocal=Borders. Id= 
+
+   12 controls
+
+   1 caption = &Outside Borders Id = 150
+
+   1 caption = &All Borders Id = 1704
+
+   1 caption = &Inside Borders Id = 149
+
+   1 caption = &No Border Id = 151
+
+   1 caption = &Top Border Id = 145
+
+   1 caption = &Bottom Border Id = 146
+
+   1 caption = &Left Border Id = 147
+
+   1 caption = &Right Border Id = 148
+
+   1 caption = Inside Hori&zontal Border Id = 1840
+
+   1 caption = Inside &Vertical Border Id = 1841
+
+   1 caption = Diagonal &Down Border Id = 1842
+
+   1 caption = Diagonal &Up Border Id = 1843
+
+CommandBar  104 Name=AutoShapes. NameLocal=AutoShapes. Id= 
+
+   9 controls
+
+   12 caption = &Lines Id = 2631
+
+   12 caption = Co&nnectors Id = 2633
+
+   12 caption = &Basic Shapes Id = 2632
+
+   12 caption = Block &Arrows Id = 1049
+
+   12 caption = &Flowchart Id = 1048
+
+   12 caption = &Stars and Banners Id = 1050
+
+   12 caption = &Callouts Id = 1047
+
+   12 caption = Act&ion Buttons Id = 2918
+
+   1 caption = &More AutoShapes... Id = 3889
+
+CommandBar  105 Name=Clipboard. NameLocal=Clipboard. Id= 
+
+   0 controls
+
+CommandBar  106 Name=Envelope. NameLocal=Envelope. Id= 
+
+   1 controls
+
+   21 caption = &Envelope Id = 3746
+
+CommandBar  107 Name=System. NameLocal=System. Id= 
+
+   6 controls
+
+   1 caption = &Restore Id = 839
+
+   1 caption = &Move Id = 841
+
+   1 caption = &Size Id = 842
+
+   1 caption = Mi&nimize Id = 838
+
+   1 caption = Ma&ximize Id = 843
+
+   1 caption = &Close Id = 840
+
+CommandBar  108 Name=Online Meeting. NameLocal=Online Meeting. Id= 
+
+   7 controls
+
+   3 caption = &Participant List Id = 3729
+
+   1 caption = &Call Participant Id = 3732
+
+   1 caption = &Remove Participants Id = 3734
+
+   1 caption = &Allow Others to Edit Id = 3733
+
+   1 caption = &Display Chat Window Id = 3735
+
+   1 caption = Display &Whiteboard Id = 3736
+
+   1 caption = &End Meeting Id = 3737
+
+CommandBar  109 Name= . NameLocal= . Id= 
+
+   1 controls
+
+   25 caption =   Id = 5746
+
+CommandBar  110 Name=Status Bar. NameLocal=Status Bar. Id= 
+
+   1 controls
+
+   25 caption = Status Bar Id = 5746
+
+CommandBar  111 Name=Ribbon. NameLocal=Ribbon. Id= 
+
+   1 controls
+
+   25 caption = Ribbon Id = 5746
+

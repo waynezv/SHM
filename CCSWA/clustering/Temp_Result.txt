@@ -1,0 +1,132 @@
+Hard Example Sup_Ncut (Post)
+
+averageBoundaryError =
+
+   18.4118
+
+
+averageRI =
+
+    0.6832
+
+
+averageGCE =
+
+    0.2130
+
+
+averageVOI =
+
+    2.2562
+
+
+
+Hard Example Sup_Ncut (No Post)
+
+averageBoundaryError =
+
+   18.2143
+
+
+averageRI =
+
+    0.6623
+
+
+averageGCE =
+
+    0.1936
+
+
+averageVOI =
+
+    2.6899
+
+
+Hard Example Sup_Ncut_Fine2 (No Post)
+
+averageBoundaryError =
+
+   17.8920
+
+
+averageRI =
+
+    0.6634
+
+
+averageGCE =
+
+    0.1783
+
+
+averageVOI =
+
+    3.1113
+
+
+
+Hard Example Sup_Ncut_Fine1 (No Post)
+
+averageBoundaryError =
+
+   17.6214
+
+
+averageRI =
+
+    0.6650
+
+
+averageGCE =
+
+    0.1680
+
+
+averageVOI =
+
+    3.0788
+
+
+
+Hard Example Sup_SLIC_Fine (300 regularization, No Post)
+
+averageBoundaryError =
+
+   17.8740
+
+
+averageRI =
+
+    0.6588
+
+
+averageGCE =
+
+    0.1692
+
+
+averageVOI =
+
+    3.4680
+
+
+
+averageBoundaryError = (600 regularization, No Post)
+
+   18.1786
+
+
+averageRI =
+
+    0.6620
+
+
+averageGCE =
+
+    0.2326
+
+
+averageVOI =
+
+    2.8079

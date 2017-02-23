@@ -1,0 +1,6 @@
+Cosine + SVD
+EER_prog =    0.0872
+EER_eval =    0.0825
+DCF_opt_prog =    0.3464
+DCF_opt_eval =    0.3467
+

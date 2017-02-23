@@ -1,0 +1,280 @@
+NIST: 
+
+trans.*pairwise, no SVD
+0.7707
+
+
+
+eig_dim = 1738, trans.*pairwise, SVD
+0.7989 (cosine)
+
+
+eig_dim = 1400, trans.*pairwise, SVD
+
+0.7964 (euclidean)
+
+eig_dim = 1200, trans.*pairwise, SVD
+0.8100 (cosine)
+0.8089 (eucliedan)
+
+eig_dim = 1000, trans.*pairwise, SVD
+0.8157 (cosine)
+0.8071 (euclidean)
+
+eig_dim = 900, trans.*pairwise, SVD
+
+0.8152 (euclidean)
+
+eig_dim = 800, trans.*pairwise, SVD
+0.8149 (cosine)
+0.8137 (euclidean)
+
+eig_dim = 700, trans.*pairwise, SVD
+
+0.8228 (euclidean)
+
+eig_dim = 600, trans.*pairwise, SVD
+0.8148 (cosine)
+0.8186 (euclidean)
+
+eig_dim = 500, trans.*pairwise, SVD
+
+0.8107 (euclidean)
+
+eig_dim = 400, trans.*pairwise, SVD
+
+0.8027 (euclidean)
+
+eig_dim = 300, trans.*pairwise, SVD
+
+0.7880 (euclidean)
+
+eig_dim = 200, trans.*pairwise, SVD
+
+0.7615 (euclidean)
+
+eig_dim = 100, trans.*pairwise, SVD
+
+0.6814 (euclidean)
+
+
+
+eig_dim = 1738, trans+pairwise, SVD
+0.7757
+
+eig_dim = 1400, trans+pairwise, SVD
+0.7962
+0.7966
+
+eig_dim = 1200, trans+pairwise, SVD
+0.8067
+0.8032
+
+eig_dim = 1000, trans+pairwise, SVD
+0.8151
+0.8115
+
+eig_dim = 800, trans+pairwise, SVD
+0.8127
+0.8154
+
+eig_dim = 700, trans+pairwise, SVD
+
+0.8150
+
+eig_dim = 600, trans+pairwise, SVD
+0.8164
+0.8136
+
+eig_dim = 500, trans+pairwise, SVD
+0.8196
+0.8175
+
+eig_dim = 400, trans+pairwise, SVD
+0.7974
+0.8001
+
+eig_dim = 300, trans+pairwise, SVD
+0.7829
+0.7904
+
+eig_dim = 200, trans+pairwise, SVD
+0.7440
+0.7513
+
+eig_dim = 100, trans+pairwise, SVD
+0.6617 (cosine)
+0.6751 (euclidean)
+
+
+eig_dim = 1738, pairwise, SVD
+0.7087
+
+eig_dim = 1400, pairwise, SVD
+0.7492
+
+eig_dim = 1200, pairwise, SVD
+0.7638
+
+eig_dim = 1000, pairwise, SVD
+0.7685
+
+eig_dim = 800, pairwise, SVD
+0.7800
+
+eig_dim = 700, pairwise, SVD
+0.7836
+
+eig_dim = 600, pairwise, SVD
+0.7848
+
+eig_dim = 500, pairwise, SVD
+0.8019
+
+eig_dim = 400, pairwise, SVD
+0.7915
+
+eig_dim = 300, pairwise, SVD
+0.7671
+
+eig_dim = 200, pairwise, SVD
+0.7203
+
+eig_dim = 100, pairwise, SVD
+0.5902
+
+
+
+Kmeans
+0.7897
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IVector:
+
+eig_dim = 1600, trans+pairwise, SVD
+0.6277 (cosine)
+
+eig_dim = 1400, trans+pairwise, SVD
+0.6381 (cosine)
+
+eig_dim = 1200, trans+pairwise, SVD
+0.6431 (cosine)
+
+eig_dim = 1000, trans+pairwise, SVD
+0.6509 (cosine)
+
+eig_dim = 800, trans+pairwise, SVD
+0.6657 (cosine)
+
+eig_dim = 600, trans+pairwise, SVD
+0.6764 (cosine)
+
+eig_dim = 500, trans+pairwise, SVD
+0.6870 (cosine)
+
+eig_dim = 400, trans+pairwise, SVD
+0.6951 (cosine)
+
+eig_dim = 300, trans+pairwise, SVD
+0.7071 (cosine)
+
+eig_dim = 200, trans+pairwise, SVD
+0.7164 (cosine)
+
+eig_dim = 150, trans+pairwise, SVD
+0.7096 (euclidean)
+
+eig_dim = 100, trans+pairwise, SVD
+0.6893
+0.6875 (euclidean)
+
+
+
+eig_dim = 1600, trans.*pairwise, SVD
+
+
+eig_dim = 1400, trans.*pairwise, SVD
+0.6456
+
+eig_dim = 1200, trans.*pairwise, SVD
+0.6559
+
+eig_dim = 1000, trans.*pairwise, SVD
+0.6655
+
+eig_dim = 800, trans.*pairwise, SVD
+0.6746
+
+eig_dim = 600, trans.*pairwise, SVD
+0.6824
+
+eig_dim = 500, trans.*pairwise, SVD
+0.6883
+
+eig_dim = 400, trans.*pairwise, SVD
+0.6955
+
+eig_dim = 300, trans.*pairwise, SVD
+0.7056
+
+eig_dim = 200, trans.*pairwise, SVD
+0.7147
+
+eig_dim = 100, trans.*pairwise, SVD
+0.6847
+
+
+
+
+eig_dim = 1600, pairwise, SVD
+0.5410
+
+eig_dim = 1400, pairwise, SVD
+0.5745
+
+eig_dim = 1200, pairwise, SVD
+0.6050
+
+eig_dim = 1000, pairwise, SVD
+0.6305
+
+eig_dim = 800, pairwise, SVD
+0.6486
+
+eig_dim = 600, pairwise, SVD
+0.6690
+
+eig_dim = 500, pairwise, SVD
+0.6807
+
+eig_dim = 400, pairwise, SVD
+0.6927
+
+eig_dim = 300, pairwise, SVD
+0.7013
+
+eig_dim = 200, pairwise, SVD
+0.7145
+
+eig_dim = 100, pairwise, SVD
+0.6889
+
+
+
+Kmeans
+0.7174

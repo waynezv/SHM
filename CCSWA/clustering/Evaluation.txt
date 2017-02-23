@@ -1,0 +1,23 @@
+Proposed: MS_KMS2 + Region_Merging
+
+averageBoundaryError =
+
+   12.3524
+
+
+averageRI =
+
+    0.8068
+
+
+averageGCE =
+
+    0.1947
+
+
+averageVOI =
+
+    1.8970
+
+Ncut: MS_KMS2 + Region_Merging
+
